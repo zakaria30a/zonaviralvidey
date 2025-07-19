@@ -1,27 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zona Viral Videy</title>
+  <title>Zona Viral Videy - Nonton Video Viral Terbaru</title>
   <script type="text/javascript" src="https://accountantflowerrespiration.com/p4vpb3bzhc?key=4519660a4e4a55d81818370d18de82b0"></script>
+
   <style>
-#adblock-warning {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  background: white;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  text-align: center;
-  padding-top: 100px;
-  font-family: Arial;
-}
-</style>
-  <style>
+    /* Peringatan AdBlock */
+    #adblock-warning {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      background: rgba(255,255,255,0.95);
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    #adblock-warning h2 {
+      color: red;
+      font-size: 24px;
+    }
+
+    /* Umpan AdBlock */
+    .adsbox {
+      height: 1px;
+      width: 1px;
+      position: absolute;
+      left: -9999px;
+      background: url('https://example.com/ad.jpg');
+    }
+
     body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #f00; color: white; padding: 20px; text-align: center; }
+    header { background: #d70000; color: white; padding: 20px; text-align: center; }
     nav { padding: 10px; background: #ddd; text-align: center; }
     nav a { margin: 0 15px; text-decoration: none; color: #000; }
     .video-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
@@ -30,71 +44,79 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Zona Viral Videy2</h1>
-  </header>
-  <nav>
-    <a href="kategori/smp.html">Viral SMP</a> 
-    <a href="kategori/hijab.html">Viral Hijab</a>
-    <a href="kategori/chindo.html">Viral Chindo</a>
-    <a href="kategori/tobrut.html">Viral Tobrut</a>
-  </nav>
-  <div class="video-container">
-    <div class="video-box">
-      <iframe src="https://videy.co/v/?id=9OQ4PNC11" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-      <p>colmek indo</p>
-      <div>
-        <a href="#" onclick="share()">🔗 Bagikan</a>
-      </div>
-      <div id="disqus_thread"></div>
-    </div>
-  </div>
-  <footer>
-     Zona Viral Videy © 2025
-  </footer>
 
-  <script>
-    function share() {
-      const url = window.location.href;
-      navigator.clipboard.writeText(url);
-      alert("Link video disalin!");
-    }
-  </script>
-  <script>
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = "zona-viral-videy";
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://EXAMPLE.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <div id="adblock-warning">
-  <h2>Silakan matikan AdBlock untuk melanjutkan</h2>
-  <p>Zona Viral Videy hanya bisa ditonton jika AdBlock dinonaktifkan. Refresh halaman setelah menonaktifkan.</p>
+<!-- Peringatan AdBlock -->
+<div id="adblock-warning">
+  <h2>⚠ Matikan AdBlock Anda!</h2>
+  <p>Zona Viral Videy hanya bisa diakses jika AdBlock dinonaktifkan.</p>
+  <p>Silakan nonaktifkan dan refresh halaman.</p>
 </div>
 
+<header>
+  <h1>🔥 Zona Viral Videy - Video Viral Terupdate</h1>
+</header>
+
+<nav>
+  <a href="kategori/smp.html">Viral SMP</a>
+  <a href="kategori/hijab.html">Viral Hijab</a>
+  <a href="kategori/chindo.html">Viral Chindo</a>
+  <a href="kategori/tobrut.html">Viral Tobrut</a>
+</nav>
+
+<div class="video-container">
+  <div class="video-box">
+    <iframe src="https://videy.co/v/?id=9OQ4PNC11" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <p>Judul Video Viral</p>
+    <div>
+      <a href="#" onclick="share()">🔗 Bagikan</a>
+    </div>
+    <div id="disqus_thread"></div>
+  </div>
+</div>
+
+<footer>
+  Zona Viral Videy © 2025
+</footer>
+
+<!-- Share Button -->
 <script>
-  window.onload = function() {
-    // Coba muat iklan palsu
-    let bait = document.createElement('div');
+  function share() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+    alert("Link video disalin!");
+  }
+</script>
+
+<!-- Disqus Comment -->
+<script>
+  var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = "zona-viral-videy";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://EXAMPLE.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+<!-- AdBlock Detector -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const bait = document.createElement('div');
     bait.className = 'adsbox';
-    bait.style.height = '1px';
     document.body.appendChild(bait);
 
-    window.setTimeout(function() {
+    setTimeout(() => {
       if (bait.offsetHeight === 0) {
-        // AdBlock terdeteksi
+        // AdBlock aktif
         document.getElementById('adblock-warning').style.display = 'block';
-        let main = document.querySelector('.video-container');
-        if (main) main.style.display = 'none';
+        document.querySelector('.video-container').style.display = 'none';
       }
       bait.remove();
     }, 100);
-  }
+  });
 </script>
 
 </body>
