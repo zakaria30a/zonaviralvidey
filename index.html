@@ -72,5 +72,30 @@
       (d.head || d.body).appendChild(s);
     })();
   </script>
+  <div id="adblock-warning">
+  <h2>Silakan matikan AdBlock untuk melanjutkan</h2>
+  <p>Zona Viral Videy hanya bisa ditonton jika AdBlock dinonaktifkan. Refresh halaman setelah menonaktifkan.</p>
+</div>
+
+<script>
+  window.onload = function() {
+    // Coba muat iklan palsu
+    let bait = document.createElement('div');
+    bait.className = 'adsbox';
+    bait.style.height = '1px';
+    document.body.appendChild(bait);
+
+    window.setTimeout(function() {
+      if (bait.offsetHeight === 0) {
+        // AdBlock terdeteksi
+        document.getElementById('adblock-warning').style.display = 'block';
+        let main = document.querySelector('.video-container');
+        if (main) main.style.display = 'none';
+      }
+      bait.remove();
+    }, 100);
+  }
+</script>
+
 </body>
 </html>
